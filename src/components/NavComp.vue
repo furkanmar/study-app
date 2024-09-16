@@ -62,8 +62,11 @@ export default {
 </script>
 <style scoped>
 .col {
+  
   display: flex;
   flex-direction: column;
+  
+
   height: 90vh; /* Yükseklik: Ekranın tamamı */
 }
 

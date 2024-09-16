@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HelloWorld from '@/components/HelloWorld.vue'
-import LoginPage from '../components/LoginPage.vue'
+import LoginPage from '../components/Login/LoginPage.vue'
 
 const routes = [
   {
