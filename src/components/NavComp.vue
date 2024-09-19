@@ -1,5 +1,5 @@
 <template>
-  <div class="row  ">
+  
     <div class="col d-flex flex-column">
       <div class="list-group flex-grow-1 " id="list-tab" role="tablist">
         <router-link
@@ -10,12 +10,24 @@
         >
           <i class="fas fa-home"></i> Home
         </router-link>
+
+        <router-link
+          to="/notebooks"
+          class="list-group-item list-group-item-action "
+          :class="{ active: $route.path === '/notebooks' }"
+          exact
+        >
+        
+          <i class="fas fa-book"></i> Notebooks
+        </router-link>
+
         <router-link
           to="/profile"
           class="list-group-item list-group-item-action"
           :class="{ active: $route.path === '/profile' }"
           exact
         >
+
           <i class="fas fa-user"></i> Profile
         </router-link>
         <router-link
@@ -45,7 +57,7 @@
         </div>
       
     </div>
-  </div>
+
 </template>
 
 <script>
@@ -67,7 +79,7 @@ export default {
   flex-direction: column;
   
 
-  height: 90vh; /* Yükseklik: Ekranın tamamı */
+  height: 89vh; /* Yükseklik: Ekranın tamamı */
 }
 
 .list-group {

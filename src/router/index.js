@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HelloWorld from '@/components/HelloWorld.vue'
 import LoginPage from '../components/Login/LoginPage.vue'
+import NotebookView from '@/components/Notebooks/NotebookView.vue'
 
 const routes = [
   {
@@ -12,6 +13,11 @@ const routes = [
     path: '/login',
     name: 'Login',
     component: LoginPage
+  },
+  {
+    path:'/notebooks',
+    name:'notebooks',
+    component :NotebookView
   }
 ]
 
